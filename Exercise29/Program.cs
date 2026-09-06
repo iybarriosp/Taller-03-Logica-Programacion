@@ -1,11 +1,11 @@
 ﻿using Exercise29;
+using Shared;
 
-Console.Write("Dibuje un puente: ");
-string structure = Console.ReadLine() ?? "";
+string structure = ConsoleExtension.GetString("Dibuje el puente: ") ?? "";
 
 Bridge bridge = new Bridge(structure);
 
-//every methods have to be validates
+//all methods have to be valid
 if (bridge.ValidateBases() &&
     bridge.ValidateBridgeSymmetry() &&
     bridge.ValidatePlatform() &&

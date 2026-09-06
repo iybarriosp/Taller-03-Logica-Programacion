@@ -1,5 +1,6 @@
 namespace Exercise29;
 
+using Shared;
 public class Bridge //Represents a bridge
 {
 
